@@ -13,5 +13,6 @@ struct Sliders: View {
     var body: some View {
         Slider(value: $value, in: 0...255, step: 1)
             .accentColor(color)
+            .animation(.default)
     }
 }
