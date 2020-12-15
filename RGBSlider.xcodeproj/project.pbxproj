@@ -12,6 +12,9 @@
 		E4DEF6002587A579001C22FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4DEF5FF2587A579001C22FC /* Assets.xcassets */; };
 		E4DEF6032587A579001C22FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4DEF6022587A579001C22FC /* Preview Assets.xcassets */; };
 		E4DEF60C2587A5F6001C22FC /* RectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DEF60B2587A5F6001C22FC /* RectangleView.swift */; };
+		E4DEF6332588BDC9001C22FC /* TextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DEF6322588BDC9001C22FC /* TextFields.swift */; };
+		E4DEF6362588BE0C001C22FC /* Sliders.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DEF6352588BE0C001C22FC /* Sliders.swift */; };
+		E4DEF6392588BE2C001C22FC /* Labels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DEF6382588BE2C001C22FC /* Labels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		E4DEF6022587A579001C22FC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E4DEF6042587A579001C22FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4DEF60B2587A5F6001C22FC /* RectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleView.swift; sourceTree = "<group>"; };
+		E4DEF6322588BDC9001C22FC /* TextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFields.swift; sourceTree = "<group>"; };
+		E4DEF6352588BE0C001C22FC /* Sliders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sliders.swift; sourceTree = "<group>"; };
+		E4DEF6382588BE2C001C22FC /* Labels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Labels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,9 @@
 				E4DEF5FB2587A575001C22FC /* RGBSliderApp.swift */,
 				E4DEF5FD2587A575001C22FC /* RGBSlider.swift */,
 				E4DEF60B2587A5F6001C22FC /* RectangleView.swift */,
+				E4DEF6382588BE2C001C22FC /* Labels.swift */,
+				E4DEF6352588BE0C001C22FC /* Sliders.swift */,
+				E4DEF6322588BDC9001C22FC /* TextFields.swift */,
 				E4DEF5FF2587A579001C22FC /* Assets.xcassets */,
 				E4DEF6042587A579001C22FC /* Info.plist */,
 				E4DEF6012587A579001C22FC /* Preview Content */,
@@ -141,9 +150,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4DEF6362588BE0C001C22FC /* Sliders.swift in Sources */,
 				E4DEF60C2587A5F6001C22FC /* RectangleView.swift in Sources */,
+				E4DEF6392588BE2C001C22FC /* Labels.swift in Sources */,
 				E4DEF5FE2587A575001C22FC /* RGBSlider.swift in Sources */,
 				E4DEF5FC2587A575001C22FC /* RGBSliderApp.swift in Sources */,
+				E4DEF6332588BDC9001C22FC /* TextFields.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

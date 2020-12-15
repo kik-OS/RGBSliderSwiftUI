@@ -14,17 +14,16 @@ struct RectangleView: View {
     let blueValue: Double
     
     var body: some View {
-        
-       
-        
+
         Color(red: redValue / 255, green: greenValue / 255, blue: blueValue / 255)
             .clipShape(RoundedRectangle(cornerRadius: 15))
             .frame(height: 200)
+            .shadow(radius: 2)
     }
 }
 
 struct Rectangle_Previews: PreviewProvider {
     static var previews: some View {
-        RectangleView(redValue: 200, greenValue: 200, blueValue: 2)
+        RectangleView(redValue: 250, greenValue: 250, blueValue: 20)
     }
 }

@@ -9,10 +9,10 @@ import SwiftUI
 
 struct RGBSlider: View {
     
-    @State private var redValue: Double = 0
-    @State private var greenValue: Double = 100
+    @State private var redValue: Double = 255
+    @State private var greenValue: Double = 255
     @State private var blueValue: Double = 255
-    @State private var stringValue: String = ""
+    @State private var showAlert = false
     
     var body: some View {
         VStack {
@@ -22,19 +22,19 @@ struct RGBSlider: View {
             VStack {
                 HStack {
                     Labels(value: redValue)
-                    Sliders(value: $redValue)
-                    TextFields(value: $redValue)
+                    Sliders(value: $redValue, color: .red)
+                    TextFields(value: $redValue, showAlert: $showAlert)
                 }
                 HStack {
                     Labels(value: greenValue)
-                    Sliders(value: $greenValue)
-                    TextFields(value: $greenValue)
+                    Sliders(value: $greenValue, color: .green)
+                    TextFields(value: $greenValue, showAlert: $showAlert)
                     
                 }
                 HStack {
                     Labels(value: blueValue)
-                    Sliders(value: $blueValue)
-                    TextFields(value: $blueValue)
+                    Sliders(value: $blueValue, color: .blue)
+                    TextFields(value: $blueValue, showAlert: $showAlert)
                     
                 }
             }
@@ -43,34 +43,6 @@ struct RGBSlider: View {
     }
 }
 
-
-struct TextFields: View {
-    @Binding var value: Double
-    var body: some View {
-        TextField("", value: $value, formatter: NumberFormatter())
-            .frame(width: 46, alignment: .trailing)
-            .textFieldStyle(RoundedBorderTextFieldStyle())
-            .keyboardType(.numberPad)
-    }
-}
-
-
-struct Sliders: View {
-    @Binding var value: Double
-    var body: some View {
-        Slider(value: $value, in: 0...255, step: 1)
-    }
-}
-
-
-struct Labels: View {
-    let value: Double
-    var body: some View {
-        Text("\(lround(value))")
-            .frame(width: 46, alignment: .leading)
-            
-    }
-}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
